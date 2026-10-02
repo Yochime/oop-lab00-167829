@@ -31,9 +31,14 @@ Wynik programu Java:
 
 ## Krótkie odpowiedzi
 
-1. Co różni commit od push? ...
-2. Dlaczego po scaleniu PR wykonuję lokalnie pull? ...
-3. Co potwierdza zielony wynik naszego CI, a czego nie potwierdza? ...
+1. Co różni commit od push?
+   Commit zapisuje zmiany wyłącznie lokalnie na dysku Twojego komputera. Działa jak zrobienie zdjęcia (migawki) plików w danym momencie i dodanie go do lokalnej historii projektu.
+   Push bierze Twoje lokalne commity i wysyła je na zewnętrzny serwer (np. GitHub). Dopiero po wykonaniu pusha Twoja praca jest zabezpieczona w chmurze i widoczna dla innych (np. dla prowadzącego).
+2. Dlaczego po scaleniu PR wykonuję lokalnie pull?
+   Kiedy klikasz "Merge pull request" na GitHubie, łączysz gałęzie i aktualizujesz kod na zdalnym serwerze w gałęzi main. Twoje lokalne repozytorium (na Twoim komputerze) o tym nie wie i wciąż posiada starą wersję main. Wykonanie git pull pobiera te nowości z serwera i aktualizuje pliki na Twoim dysku, aby oba miejsca (serwer i komputer) znów były idealnie zsynchronizowane.
+3. Co potwierdza zielony wynik naszego CI, a czego nie potwierdza?
+   Potwierdza: że kod nie ma błędów składniowych (kompiluje się) oraz że daje się uruchomić bez awarii w czystym, wyizolowanym środowisku na serwerach GitHuba.
+   Nie potwierdza: poprawności logicznej działania programu (np. czy program wypisuje dokładnie ten tekst, o który prosił prowadzący w zadaniu) ani tego, czy środowisko programistyczne na Twoim własnym komputerze jest poprawnie skonfigurowane (ponieważ testy uruchamiają się na maszynie w chmurze, a nie u Ciebie).
 
 ## Ewentualne problemy środowiska
 
