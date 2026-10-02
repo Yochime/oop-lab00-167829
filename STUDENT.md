@@ -12,14 +12,14 @@
 
 Wynik programu C++:
 
-```Hello from C++!
-...
+```
+Hello from C++!
 ```
 
 Wynik programu Java:
 
-```Hello from Java!
-...
+```
+Hello from Java!
 ```
 
 ## Błąd i poprawka (zadanie 5)
